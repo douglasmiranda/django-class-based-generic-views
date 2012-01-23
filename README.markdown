@@ -7,3 +7,11 @@ Assim podemos definir atributos, comportamentos e características especiais em 
 #Qual o objetivo deste repositório
 
 Apresentar e exemplificar o uso das diversas classes pré-definidas, (Class Based Views), disponíveis no Django para criação de views de um modo bem legal.
+
+##Apresentação
+
+A apresentação em texto será feita por meio de artigos em meu blog, cujo o link para lista de artigos será colocado, (aqui), em breve.
+
+##Exemplos
+
+Os exemplos estarão neste projeto dentro da app "app_exemplo" no módulo "views".
