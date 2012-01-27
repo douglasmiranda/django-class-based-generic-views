@@ -1,7 +1,6 @@
 # coding:utf-8
 from django.db import models
 from django.db.models import permalink
-from django.conf import settings
 
 
 class ListaDeReproducao(models.Model):
@@ -33,7 +32,7 @@ class Audio(models.Model):
 	"""
 	titulo = models.CharField('título', max_length=255)
 	slug = models.SlugField(unique=True)
-	audio = models.FilePathField('áudio',path=settings.MEDIA_ROOT + 'audios/', recursive=True)
+	audio = models.FileField('áudio', upload_to='audios/')
 	descricao = models.TextField('descrição', blank=True)
 	criado = models.DateTimeField(auto_now_add=True)
 	modificado = models.DateTimeField(auto_now=True)
