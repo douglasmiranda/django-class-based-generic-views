@@ -9,7 +9,7 @@ class ListaDeReproducao(models.Model):
 	 Model de uma lista de reprodução de arquivos de áudio.
 	"""
 	titulo = models.CharField('título', max_length=255)
-	slug = models.SlugField()
+	slug = models.SlugField(unique=True)
 	descricao = models.TextField('descrição', blank=True)
 	audios = models.ManyToManyField('Audio')
 	criado = models.DateTimeField(auto_now_add=True)
@@ -32,7 +32,7 @@ class Audio(models.Model):
 	 Model de arquivos de áudio.
 	"""
 	titulo = models.CharField('título', max_length=255)
-	slug = models.SlugField()
+	slug = models.SlugField(unique=True)
 	audio = models.FilePathField('áudio',path=settings.MEDIA_ROOT + 'audios/', recursive=True)
 	descricao = models.TextField('descrição', blank=True)
 	criado = models.DateTimeField(auto_now_add=True)
