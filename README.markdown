@@ -1,4 +1,4 @@
-#Django Class Based Views - Generic Views (Projeto em andamento)
+#Django Class-Based Generic Views (Projeto em andamento)
 
 No Django 1.3, as generic views deixaram de ser definidas como funções e passaram a ser classes.
 
@@ -6,7 +6,7 @@ Assim podemos definir atributos, comportamentos e características especiais em 
 
 #Qual o objetivo deste repositório?
 
-Apresentar e exemplificar o uso das diversas classes pré-definidas, (Class Based Views), disponíveis no Django para criação de views de um modo bem legal.
+Apresentar e exemplificar o uso das diversas classes pré-definidas, ([Class-Based Generic Views](https://docs.djangoproject.com/en/1.3/topics/class-based-views/)), disponíveis no Django para criação de views de um modo bem legal.
 
 ##Apresentação
 
