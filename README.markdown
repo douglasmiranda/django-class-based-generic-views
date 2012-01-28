@@ -14,8 +14,8 @@ A apresentação em texto será feita por meio de artigos em meu blog, cujo o li
 
 ##Exemplos
 
-Os exemplos estarão neste projeto dentro da app "[app_exemplo](#https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo)" no módulo "[views](#https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo/views)".
+Os exemplos estarão neste projeto dentro da app "[app_exemplo](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo)" no módulo "[views](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo/views)".
 
 #Sobre as licenças
 
-Os arquivos de áudio dentro de [media/audios](#https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/media/audios) estão licenciados pela atribuição (Creative Commons Attribution 3.0) e podem ser encontradas em soundbible.com
+Os arquivos de áudio dentro de [media/audios](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/media/audios) estão licenciados pela atribuição (Creative Commons Attribution 3.0) e podem ser encontradas em soundbible.com
