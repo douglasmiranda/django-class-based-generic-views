@@ -1,4 +1,4 @@
-#Django Class Based Views - Generic Views
+#Django Class Based Views - Generic Views (Projeto em andamento)
 
 No Django 1.3, as generic views deixaram de ser definidas como funções e passaram a ser classes.
 
@@ -15,3 +15,7 @@ A apresentação em texto será feita por meio de artigos em meu blog, cujo o li
 ##Exemplos
 
 Os exemplos estarão neste projeto dentro da app "app_exemplo" no módulo "views".
+
+#Sobre as licenças
+
+Os arquivos de áudio dentro de $PROJECT_ROOT/media/audios/ estão licenciados pela atribuição (Creative Commons Attribution 3.0) e podem ser encontradas em soundbible.com
