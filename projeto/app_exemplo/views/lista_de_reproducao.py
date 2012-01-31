@@ -76,4 +76,54 @@ class ListasDeReproducao(ListView):
 	Então se quisermos que "object_list" vire, por exemplo, "listas_de_reproducao"
 	faça como na linha comentada abaixo:
 	"""
-	# context_object_name = 'listas_de_reproducao'
+
+	"""
+	Sobre Objetos de contexto
+
+	Se você quiser obter o 'context_object_name' ou o 'queryset', você poderia
+	simplesmente usar dos métodos: "get_queryset, get_context_object_name" que podem
+	ser encontrados, para melhor visualização, em django/views/generic/list.py.
+
+	Caso queira fazer mais do que apenas obter, se quizer, em algum momento modificar,
+	tratar casos específicos ou mesmo deixar mais explícito os objetos de contexto que
+	estarão disponíveis em seu template, você pode utilizar o "get_context_data"
+
+	Por exemplo:
+	"""
+	# def get_context_data(self, **kwargs):
+	# 	context = super(ListasDeReproducao, self).get_context_data(**kwargs)
+	# 	# Aqui você fará inclusão, alteração ou exclusão de contextos como desejar
+	# 	context['ultima_lista_de_reproducao'] = ListaDeReproducao.objects.latest()
+	# 	return context
+
+	"""
+	Se quiser saber em tempo de execução quais os objetos de contexto
+	que estão sendo passados para seu template, você pode definir este método
+	e mandar imprimir em console para que você possa ver assim que acessar a url.
+
+	def get_context_data(self, **kwargs):
+		context = super(ListasDeReproducao, self).get_context_data(**kwargs)
+		# imprimindo no console o que há no dicionário de contextos
+		print context
+
+		return context
+
+	Você verá algo desse tipo:
+	 {
+	 	'paginator': None,
+	 	'page_obj': None,
+	 	'is_paginated': False,
+	 	'object_list':
+	 		[<ListaDeReproducao: Animiais>,
+	 		<ListaDeReproducao: Clicks>,
+	 		<ListaDeReproducao: Armas disparando>,
+	 		<ListaDeReproducao: Sons de armas (GERAL)>],
+	 	'listadereproducao_list':
+	 		[<ListaDeReproducao: Animiais>,
+	 		<ListaDeReproducao: Clicks>,
+	 		<ListaDeReproducao: Armas disparando>,
+	 		<ListaDeReproducao: Sons de armas (GERAL)>]
+	 }
+	"""
+
+	# paginate_by = 4
