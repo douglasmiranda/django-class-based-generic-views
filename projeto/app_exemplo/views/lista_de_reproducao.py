@@ -20,4 +20,22 @@ class ListasDeReproducao(ListView):
 	"""
 	# template_name = 'app_exemplo/lista_de_reproducao.html'
 
+	"""
+	Uma ListView, obviamente, precisa de dados para serem listados.
+
+	Se estes dados estão vindo de algum model, nós precisamos informar
+	o model que queremos extrair esta lista de objetos.
+
+	Em nosso caso o model é o 'ListaDeReproducao'.
+	"""
 	model = ListaDeReproducao
+
+	"""
+	Um outro atributo que pode substituir o model é o queryset.
+
+	Com ele é possível passar a lita de objetos a serem listados.
+	A vantagem é que você já pode personalizar a recuperação desses
+	dados, informando por exemplo um .filter(), .order(), entre outros
+	métodos disponíveis no model.
+	"""
+	# queryset = ListaDeReproducao.objects.all()
