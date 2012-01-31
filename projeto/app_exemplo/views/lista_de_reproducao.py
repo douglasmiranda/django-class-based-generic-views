@@ -140,4 +140,49 @@ class ListasDeReproducao(ListView):
 	 }
 	"""
 
+	"""
+	Toda lista de objetos tende a aumentar, para isto precisamos controlar a
+	exibição desses objetos em tela com a paginação.
+
+	Para isto basta fornecer ao atributo 'paginate_by' a quantidade de objetos
+	que você quer que seja listada por página. Por exemplo:
+	paginate_by = 15
+	Listará 15 objetos por página.
+
+	Se quiser ver em nosso exemplo isto em uso experimente descomentar a linha
+	abaixo, e serão exibidos 2 objetos por página.
+	"""
 	# paginate_by = 4
+	"""
+	No template, em um exemplo bem simples de páginação você poderia fazer algo como:
+	{% if is_paginated %}
+	<div class="paginacao">
+		<span class="paginacao-links">
+			{% if page_obj.has_previous %}
+			<a href="?page={{ page_obj.previous_page_number }}">anterior</a>
+			{% endif %}
+			<span class="page-current">
+				P&aacute;gina {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}.
+			</span>
+			{% if page_obj.has_next %}
+			<a href="?page={{ page_obj.next_page_number }}">pr&oacute;xima</a>
+			{% endif %}
+		</span>
+	</div>
+	{% endif %}
+	Que terá como resultado algo como: "Página 1 de 2. próxima"
+	"""
+
+	"""
+	Sobre paginação
+
+	A criatividade é bastante aplicada neste ponto, então você além de explorar as opções
+	de personalização do template pode alterar conforme quiser o limite desta paginação
+	inclusive em tempo de execução com o "paginate_queryset". Nas linhas comentadas abaixo
+	exemplifico isto, tentando obter da url o parâmetro "limite" para ser usado como paginação,
+	caso não exista eu uso a paginação padrão.
+	"""
+	# def paginate_queryset(self, queryset, page_size):
+	# 	page_size = self.request.GET.get('limite', page_size)
+	# 	paginate_queryset = super(ListasDeReproducao, self).paginate_queryset(queryset, page_size)
+	# 	return paginate_queryset
