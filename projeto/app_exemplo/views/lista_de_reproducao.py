@@ -1,33 +1,23 @@
+# coding: utf-8
 from django.views.generic import ListView
 from app_exemplo.models import ListaDeReproducao
 
 
 class ListasDeReproducao(ListView):
 	"""
-	# template_name = 'blog/todos-artigos.html'
-	# context_object_name = 'listas_de_reproducao'
-	# queryset = ListaDeReproducao.objects.all()
-	# paginate_by = 4
+	Você pode usar o atributo "template_name" para informar a
+	localização do template personalizado que você quer utilizar.
 
-	def get_context_data(self, **kwargs):
-		context = super(ListasDeReproducao, self).get_context_data(**kwargs)
-		print context
-		return context
+	Caso não queira informar, que é o que eu fiz aqui, por padrão
+	o Django tentará encontrar um template com um nome neste padrão:
+	'NomeDoModel_TipoDeView.html'. Como o nosso model é o
+	'ListaDeReproducao' e nossa view é uma ListView ele buscará por:
+	'listadereproducao_list.html'. Você pode conferir em:
+	app_exemplo/templates/app_exemplo/
 
-	 {
-	 	'paginator': None,
-	 	'page_obj': None,
-	 	'is_paginated': False,
-	 	'object_list':
-	 		[<ListaDeReproducao: Animiais>,
-	 		<ListaDeReproducao: Clicks>,
-	 		<ListaDeReproducao: Armas disparando>,
-	 		<ListaDeReproducao: Sons de armas (GERAL)>],
-	 	'listadereproducao_list':
-	 		[<ListaDeReproducao: Animiais>,
-	 		<ListaDeReproducao: Clicks>,
-	 		<ListaDeReproducao: Armas disparando>,
-	 		<ListaDeReproducao: Sons de armas (GERAL)>]
-	 }
+	Para informar a localização do template com o nome personalizado
+	basta fazer como na linha comentada abaixo.
 	"""
+	# template_name = 'app_exemplo/lista_de_reproducao.html'
+
 	model = ListaDeReproducao
