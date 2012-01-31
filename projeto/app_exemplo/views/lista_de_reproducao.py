@@ -39,3 +39,41 @@ class ListasDeReproducao(ListView):
 	métodos disponíveis no model.
 	"""
 	# queryset = ListaDeReproducao.objects.all()
+
+	"""
+	O 'context_object_name' é o nome da variável de contexto que estará
+	disponível para você manipular em seu template, em nosso caso
+	no 'listadereproducao_list.html'.
+
+	Quando você não informa um nome personalizado, que foi o que fizemos,
+	a variável vai se chamar 'object_list' que será uma lista de objetos.
+
+	Para representar visualmente, em nosso exemplo será algo como isto:
+	{
+		# OUTROS OBJETOS DE CONTEXTO,
+		'object_list':
+		 		[<ListaDeReproducao: Animiais>,
+		 		<ListaDeReproducao: Clicks>,
+		 		<ListaDeReproducao: Armas disparando>,
+		 		<ListaDeReproducao: Sons de armas (GERAL)>],
+		 	'listadereproducao_list':
+		 		[<ListaDeReproducao: Animiais>,
+		 		<ListaDeReproducao: Clicks>,
+		 		<ListaDeReproducao: Armas disparando>,
+		 		<ListaDeReproducao: Sons de armas (GERAL)>]
+	}
+
+	Podemos manipular, por exemplo, assim:
+	<ul>
+	{% for lista_de_reproducao in object_list %}
+		<li>
+			<p>{{ lista_de_reproducao.titulo }}</p>
+			<p>{{ lista_de_reproducao.descricao }}</p>
+		</li>
+	{% endfor %}
+	</ul>
+
+	Então se quisermos que "object_list" vire, por exemplo, "listas_de_reproducao"
+	faça como na linha comentada abaixo:
+	"""
+	# context_object_name = 'listas_de_reproducao'
