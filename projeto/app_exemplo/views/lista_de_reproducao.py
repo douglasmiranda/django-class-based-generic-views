@@ -5,6 +5,20 @@ from app_exemplo.models import ListaDeReproducao
 
 class ListasDeReproducao(ListView):
 	"""
+	ListasDeReproducao é o model que herda de ListView
+	e ListView pode ser encontrado em: django/views/generic/list.py
+
+	É bem simples utilizar a generic view ListView para listar objetos.
+	Tanto que neste exemplo o código é basicamente este:
+
+	class ListasDeReproducao(ListView):
+		model = ListaDeReproducao
+
+	O resto são as explicações e opções de personalização que você
+	pode fazer com ListView.
+	"""
+
+	"""
 	Você pode usar o atributo "template_name" para informar a
 	localização do template personalizado que você quer utilizar.
 
