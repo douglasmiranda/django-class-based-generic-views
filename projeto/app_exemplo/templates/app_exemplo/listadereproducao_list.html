@@ -1,7 +1,7 @@
 <ul>
 {% for lista_de_reproducao in object_list %}
 	<li>
-		<p><a href="">{{ lista_de_reproducao.titulo }}</a></p>
+		<p><a href="{{ lista_de_reproducao.get_absolute_url }}">{{ lista_de_reproducao.titulo }}</a></p>
 		<p>{{ lista_de_reproducao.descricao }}</p>
 	</li>
 {% endfor %}

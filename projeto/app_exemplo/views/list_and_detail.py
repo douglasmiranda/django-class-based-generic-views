@@ -1,5 +1,5 @@
 # coding: utf-8
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from app_exemplo.models import ListaDeReproducao
 
 
@@ -186,3 +186,7 @@ class ListasDeReproducao(ListView):
 	# 	page_size = self.request.GET.get('limite', page_size)
 	# 	paginate_queryset = super(ListasDeReproducao, self).paginate_queryset(queryset, page_size)
 	# 	return paginate_queryset
+
+
+class DetalhesListasDeReproducao(DetailView):
+	model = ListaDeReproducao

@@ -17,13 +17,13 @@ class ListaDeReproducao(models.Model):
 	def __unicode__(self):
 		return '%s' % self.titulo
 
+	@permalink
+	def get_absolute_url(self):
+		return ('app_exemplo-detailview-exemplo-1', [self.pk])
+
 	class Meta:
 		verbose_name = 'lista de reprodução'
 		verbose_name_plural = 'listas de reprodução'
-
-	# @permalink
-	# def get_absolute_url(self):
-	#     return ('audio_set_detail', None, { 'slug': self.slug })
 
 
 class Audio(models.Model):
