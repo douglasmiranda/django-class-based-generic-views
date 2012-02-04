@@ -6,7 +6,7 @@ from app_exemplo.models import ListaDeReproducao
 class ListasDeReproducao(ListView):
 	"""
 	ListasDeReproducao é a nossa class based generic view que herda de
-	ListView que pode ser encontrado em: django/views/generic/list.py
+	ListView que pode ser encontrada em: django/views/generic/list.py
 
 	É bem simples utilizar a generic view ListView para listar objetos.
 	Tanto que neste exemplo o código é basicamente este:
