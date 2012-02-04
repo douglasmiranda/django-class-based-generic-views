@@ -221,4 +221,20 @@ class DetalhesListasDeReproducao(DetailView):
 	"""
 	# template_name = 'app_exemplo/lista_de_reproducao_detalhes.html'
 
+	"""
+	Como na ListView: ListasDeReproducao, aqui também é necessário informar o model
+	do qual extrairemos as informações desejadas.
+	"""
 	model = ListaDeReproducao
+
+	"""
+	Como no ListView aqui você pode escolher entre fornecer o model e/ou o queryset.
+
+	Mas manipular queryset no DetailView seria para casos bem específicos, pois filtragem
+	e outras coisas que podem ser feitas com o queryset são geralmente feitas já na hora
+	de listar, no caso, em uma ListView e no DetailView o objeto selecionado já é o definitivo
+	e queremos somente extrair informações dele. Para fazer maiores personalizações no objeto
+	de contexto gerado pela DetailView é necessário manipular os objetos de contexto com
+	o método "get_context_data".
+	"""
+	# queryset = ListaDeReproducao.objects.all()
