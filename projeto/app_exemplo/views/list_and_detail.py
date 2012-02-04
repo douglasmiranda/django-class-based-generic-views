@@ -211,4 +211,14 @@ class DetalhesListasDeReproducao(DetailView):
 	pode fazer com DetailView, que há alguns atributos semelhantes no ListView.
 	"""
 
+	"""
+	A personalização deste atributo é feita da mesma forma que no ListView,
+	veja mais na view ListasDeReproducao.
+
+	O que muda é que se você não definir, automaticamente ela vai buscar o seguinte
+	template: "listadereproducao_detail.html" que é a soma do nome do Model + o tipo
+	de view: Model: ListaDeReproducao e View: DetailView
+	"""
+	# template_name = 'app_exemplo/lista_de_reproducao_detalhes.html'
+
 	model = ListaDeReproducao
