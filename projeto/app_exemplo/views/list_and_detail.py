@@ -61,6 +61,8 @@ class ListasDeReproducao(ListView):
 
 	Quando você não informa um nome personalizado, que foi o que fizemos,
 	a variável vai se chamar 'object_list' que será uma lista de objetos.
+	Ela também poderá ser chamada por um nome composto da seguinte maneira:
+	NOME_DO_MODEL_list, em nosso caso "listadereproducao_list".
 
 	Para representar visualmente, em nosso exemplo será algo como isto:
 	{
@@ -70,11 +72,11 @@ class ListasDeReproducao(ListView):
 		 		<ListaDeReproducao: Clicks>,
 		 		<ListaDeReproducao: Armas disparando>,
 		 		<ListaDeReproducao: Sons de armas (GERAL)>],
-		 	'listadereproducao_list':
-		 		[<ListaDeReproducao: Animiais>,
-		 		<ListaDeReproducao: Clicks>,
-		 		<ListaDeReproducao: Armas disparando>,
-		 		<ListaDeReproducao: Sons de armas (GERAL)>]
+	 	'listadereproducao_list':
+	 		[<ListaDeReproducao: Animiais>,
+	 		<ListaDeReproducao: Clicks>,
+	 		<ListaDeReproducao: Armas disparando>,
+	 		<ListaDeReproducao: Sons de armas (GERAL)>]
 	}
 
 	Podemos manipular, por exemplo, assim:
