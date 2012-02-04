@@ -239,3 +239,36 @@ class DetalhesListasDeReproducao(DetailView):
 	o método "get_context_data".
 	"""
 	# queryset = ListaDeReproducao.objects.all()
+
+	"""
+	Se você não der um nome para o objeto de contexto para manipular nos templates o nome dele
+	será o nome do model, neste caso "listadereproducao", em lower case mesmo. Ou poderá ser acessado
+	também como "object".
+
+	Se você visualizar as variáveis de contexto que estão sendo passadas para seu template verá
+	algo assim:
+
+	{
+		'listadereproducao': <ListaDeReproducao: Armas disparando>,
+		'object': <ListaDeReproducao: Armas disparando>
+	}
+
+	Você pode personalizá-lo como na linha comentada abaixo:
+	"""
+	# context_object_name = 'lista_de_reproducao'
+
+	"""
+	Sobre Objetos de contexto
+
+	O objeto de contexto na DetailView é diferente da ListView, pois no conteúdo extraído do
+	Model não temos uma lista e sim um objeto, já que a intenção é listar os detalhes de um
+	objeto específico.
+
+	Não quer dizer que você não possa definir o método "get_context_data" e personalizar os
+	objetos de contexto:
+	"""
+	# def get_context_data(self, **kwargs):
+	# 	context = super(DetalhesListasDeReproducao, self).get_context_data(**kwargs)
+	# 	# Aqui você fará inclusão, alteração ou exclusão de contextos como desejar
+	# 	context['listas_de_outras_coisas'] = OutroModel.objects.all()
+	# 	return context
