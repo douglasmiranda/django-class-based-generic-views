@@ -191,4 +191,24 @@ class ListasDeReproducao(ListView):
 
 
 class DetalhesListasDeReproducao(DetailView):
+	"""
+	DetalhesListasDeReproducao é a nossa class based generic view que
+	herda de DetailView que pode ser encontrada em: django/views/generic/detail.py
+
+	É bem simples utilizar a generic view DetailView para exibir informações de um
+	objeto ou mais, baseado no "slug" ou na chave primária "pk". Geralmente precisamos
+	disso quando, à partir, de um lista de objetos temos de exibir mais informações
+	de um objeto especificamente ou mesmo gerar o permalink dele. Como por exemplo a
+	página interna de uma notícia. Em nosso caso queremos mais detalhes sobre a lista
+	de reprodução para visualizar mais informações e os áudios contidos na lista.
+
+	O código deste exemplo é basicamente este:
+
+	class DetalhesListasDeReproducao(DetailView):
+		model = ListaDeReproducao
+
+	O resto são as explicações e opções de personalização que você
+	pode fazer com DetailView, que há alguns atributos semelhantes no ListView.
+	"""
+
 	model = ListaDeReproducao
