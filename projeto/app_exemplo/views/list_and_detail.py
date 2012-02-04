@@ -92,6 +92,7 @@ class ListasDeReproducao(ListView):
 	Então se quisermos que "object_list" vire, por exemplo, "listas_de_reproducao"
 	faça como na linha comentada abaixo:
 	"""
+	# context_object_name = 'listas_de_reproducao'
 
 	"""
 	Sobre Objetos de contexto
