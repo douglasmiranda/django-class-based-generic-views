@@ -1,0 +1,16 @@
+<h1>{{ listadereproducao.titulo }}</h1>
+<p>{{ listadereproducao.descricao }}</p>
+<p>
+	Criada: <strong>{{ listadereproducao.criado }}</strong> | 
+	Atualizada: <strong>{{ listadereproducao.modificado }}</strong>
+</p>
+
+<ul>
+{% for audio in listadereproducao.audios.all %}
+	<li>
+		<p><a href="{{ MEDIA_URL }}{{ audio.audio }}">{{ audio.titulo }}</a></p>
+		<p>{{ audio.descricao }}</p>
+		<p>Última atualização: {{ audio.modificado|timesince }}</p>
+	</li>
+{% endfor %}
+</ul>
