@@ -10,7 +10,7 @@ Apresentar e exemplificar o uso das diversas classes pré-definidas, ([Class-Bas
 
 ##Apresentação
 
-A apresentação em texto será feita por meio de artigos em meu blog, cujo o link para lista de artigos será colocado, (aqui), em breve.
+A apresentação em texto será feita por meio de artigos em meu blog, vou publicando e listando os links que já houverem aqui abaixo.
 
 Lista de artigos:
 
