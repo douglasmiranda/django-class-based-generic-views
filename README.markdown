@@ -16,6 +16,8 @@ Lista de artigos:
 
 * [ListView - Django class-based generic views - I](http://douglasmiranda.com/artigo/listview-django-class-based-generic-views-i/)
 
+* [DetailView - Django class-based generic views - II](http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/)
+
 ##Exemplos
 
 Os exemplos estarão neste projeto dentro da app "[app_exemplo](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo)" no módulo "[views](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo/views)".
