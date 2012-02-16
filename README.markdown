@@ -14,9 +14,9 @@ A apresentação em texto será feita por meio de artigos em meu blog, vou publi
 
 Lista de artigos:
 
-* [ListView - Django class-based generic views - I](http://douglasmiranda.com/artigo/listview-django-class-based-generic-views-i/)
+* [ListView](http://douglasmiranda.com/artigo/listview-django-class-based-generic-views-i/)
 
-* [DetailView - Django class-based generic views - II](http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/)
+* [DetailView](http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/)
 
 ##Exemplos
 
