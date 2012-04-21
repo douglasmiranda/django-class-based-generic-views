@@ -1,6 +1,6 @@
 # coding: utf-8
 from django.views.generic import ListView, DetailView
-from app_exemplo.models import ListaDeReproducao
+from models import ListaDeReproducao
 
 
 class ListasDeReproducao(ListView):

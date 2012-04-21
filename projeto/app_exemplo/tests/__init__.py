@@ -1,1 +1,0 @@
-from app_exemplo.tests.mensagens import *
