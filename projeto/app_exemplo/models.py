@@ -4,45 +4,45 @@ from django.db.models import permalink
 
 
 class ListaDeReproducao(models.Model):
-	"""
-	 Model de uma lista de reprodução de arquivos de áudio.
-	"""
-	titulo = models.CharField('título', max_length=255)
-	slug = models.SlugField(unique=True)
-	descricao = models.TextField('descrição', blank=True)
-	audios = models.ManyToManyField('Audio')
-	criado = models.DateTimeField(auto_now_add=True)
-	modificado = models.DateTimeField(auto_now=True)
+    """
+     Model de uma lista de reprodução de arquivos de áudio.
+    """
+    titulo = models.CharField('título', max_length=255)
+    slug = models.SlugField(unique=True)
+    descricao = models.TextField('descrição', blank=True)
+    audios = models.ManyToManyField('Audio')
+    criado = models.DateTimeField(auto_now_add=True)
+    modificado = models.DateTimeField(auto_now=True)
 
-	def __unicode__(self):
-		return '%s' % self.titulo
+    def __unicode__(self):
+        return '%s' % self.titulo
 
-	@permalink
-	def get_absolute_url(self):
-		return ('app_exemplo-detailview-exemplo-1', [self.pk])
+    @permalink
+    def get_absolute_url(self):
+        return ('app_exemplo-detailview-exemplo-1', [self.pk])
 
-	class Meta:
-		verbose_name = 'lista de reprodução'
-		verbose_name_plural = 'listas de reprodução'
+    class Meta:
+        verbose_name = 'lista de reprodução'
+        verbose_name_plural = 'listas de reprodução'
 
 
 class Audio(models.Model):
-	"""
-	 Model de arquivos de áudio.
-	"""
-	titulo = models.CharField('título', max_length=255)
-	slug = models.SlugField(unique=True)
-	audio = models.FileField('áudio', upload_to='audios/')
-	descricao = models.TextField('descrição', blank=True)
-	criado = models.DateTimeField(auto_now_add=True)
-	modificado = models.DateTimeField(auto_now=True)
+    """
+     Model de arquivos de áudio.
+    """
+    titulo = models.CharField('título', max_length=255)
+    slug = models.SlugField(unique=True)
+    audio = models.FileField('áudio', upload_to='audios/')
+    descricao = models.TextField('descrição', blank=True)
+    criado = models.DateTimeField(auto_now_add=True)
+    modificado = models.DateTimeField(auto_now=True)
 
-	def __unicode__(self):
-		return '%s' % self.titulo
+    def __unicode__(self):
+        return '%s' % self.titulo
 
-	class Meta:
-		verbose_name = 'áudio'
+    class Meta:
+        verbose_name = 'áudio'
 
-	# @permalink
-	# def get_absolute_url(self):
-	#   return ('audio_detail', None, { 'slug': self.slug })
+    # @permalink
+    # def get_absolute_url(self):
+    #   return ('audio_detail', None, { 'slug': self.slug })
