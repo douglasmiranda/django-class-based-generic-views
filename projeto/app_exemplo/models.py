@@ -19,7 +19,7 @@ class ListaDeReproducao(models.Model):
 
     @permalink
     def get_absolute_url(self):
-        return ('app_exemplo-detailview-exemplo-1', [self.pk])
+        return ('app_exemplo-detailview', [self.pk])
 
     class Meta:
         verbose_name = 'lista de reprodução'
