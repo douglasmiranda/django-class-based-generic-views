@@ -18,6 +18,8 @@ Lista de artigos:
 
 * [DetailView](http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/)
 
+* [Json View](http://douglasmiranda.com/artigo/json-view-django-class-based-generic-views-iii/)
+
 ##Exemplos
 
 Os exemplos estarão neste projeto dentro da app "[app_exemplo](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo)" no módulo "[views](https://github.com/douglasmiranda/django-class-based-generic-views/tree/master/projeto/app_exemplo/views)".
