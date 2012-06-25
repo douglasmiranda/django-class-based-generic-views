@@ -14,11 +14,13 @@ A apresentação em texto será feita por meio de artigos em meu blog, vou publi
 
 Lista de artigos:
 
-* [ListView](http://douglasmiranda.com/artigo/listview-django-class-based-generic-views-i/)
+* [ListView](http://douglasmiranda.com/artigo/listview-django-class-based-generic-views-i/) - aprenda diminuir repetição de código em suas views de listagem com ListView
 
-* [DetailView](http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/)
+* [DetailView](http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/) - view que exibe os detalhes de um objeto pelo slug ou pk pode ser bem fácil de se fazer
 
-* [Json View](http://douglasmiranda.com/artigo/json-view-django-class-based-generic-views-iii/)
+* [Json View](http://douglasmiranda.com/artigo/json-view-django-class-based-generic-views-iii/) - reaproveitando um ListView e serializando a saída, transformando-a em Json
+
+* [LoginRequiredMixin](http://douglasmiranda.com/artigo/login-required-mixin-django-class-based-generic-views-iv/) - vamos ver como trabalhar com as CBV + o decorator login_required de forma reaproveitável, através de um Mixin
 
 ##Exemplos
 

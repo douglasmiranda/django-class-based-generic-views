@@ -5,6 +5,9 @@ from django.contrib.auth.decorators import login_required
 
 class LoginRequiredMixin(object):
     """
+    O artigo que faz o uso desse código pode ser conferido em:
+    http://douglasmiranda.com/artigo/login-required-mixin-django-class-based-generic-views-iv/
+
     Criei este Mixin para utilizar em views em que somente usuários
     autenticados possam acessar. Para saber mais sobre Mixins:
     https://docs.djangoproject.com/en/1.3/topics/class-based-views/#more-than-just-html

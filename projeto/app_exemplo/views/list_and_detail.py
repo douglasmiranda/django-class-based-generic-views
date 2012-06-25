@@ -5,6 +5,10 @@ from app_exemplo.models import ListaDeReproducao
 
 class ListasDeReproducao(ListView):
     """
+    O artigo que faz o uso desse código pode ser conferido em:
+    http://douglasmiranda.com/artigo/listview-django-class-based-generic-views-i/
+    http://douglasmiranda.com/artigo/json-view-django-class-based-generic-views-iii/
+
     ListasDeReproducao é a nossa class based generic view que herda de
     ListView que pode ser encontrada em: django/views/generic/list.py
 
@@ -193,6 +197,9 @@ class ListasDeReproducao(ListView):
 
 class DetalhesListasDeReproducao(DetailView):
     """
+    O artigo que faz o uso desse código pode ser conferido em:
+    http://douglasmiranda.com/artigo/detailview-django-class-based-generic-views-ii/
+
     DetalhesListasDeReproducao é a nossa class based generic view que
     herda de DetailView que pode ser encontrada em: django/views/generic/detail.py
 

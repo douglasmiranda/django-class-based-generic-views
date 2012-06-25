@@ -6,6 +6,9 @@ from list_and_detail import ListasDeReproducao
 
 class ListasDeReproducaoJson(ListasDeReproducao):
     """
+    O artigo que faz o uso desse código pode ser conferido em:
+    http://douglasmiranda.com/artigo/json-view-django-class-based-generic-views-iii/
+
     ListasDeReproducaoJson é nossa view que reaproveita o que fizemos
     em app_exemplo.views.list_and_detail.ListasDeReproducao para
     transformarmos o retorno em JSON.
